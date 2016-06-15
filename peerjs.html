@@ -21,28 +21,25 @@
 
 <!--Steps-->
 <div>
-	<h2>Call your Peer</h2>
+
 
 	<!--Get local audio/video stream-->
 	<div id="step1">
-		<p>Click 'allow' on the top of the screen to allow using your webcam and microphone for calls</p>
 		<div id="step1-error">
 			<p>Failed to access the webcam and microphone. </p>
 			<a href="#" id="step1-retry" class="button">Try again</a>
 		</div>
 	</div>
 
-<!--Make calls to others-->
 <div id="step2">
 	<p>Your  id: <span id="my-id">...</span></p>
-	<p>Share this id with others</p>
+	<p>Share this id with peers to get invited to their session</p>
 	<p><span id="subhead">Invite to session</span><br>
-		<input type="text" placeholder="Add user id..." id="callto-id">
+		<input type="text" placeholder="Add user id to current session..." id="callto-id">
 		<a href="#" id="make-call">Invite</a>
 	</p>
 </div>
 
-<!--Call in progress-->
 <div id="step3">
 	<p>Currently in session with <span id="their-id">...</span></p>
 	<p><a href="#" id="end-call">End Session</a></p>
