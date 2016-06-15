@@ -30,31 +30,31 @@
 
 <!--Steps-->
 <div>
-	<h2>Super-simple PeerJS Video Chat with Manual Signalling</h2>
+	<h2>Call your Peer</h2>
 
 	<!--Get local audio/video stream-->
 	<div id="step1">
-		<p>Please click 'allow' on the top of the screen so we can access your webcam and microphone for calls</p>
+		<p>Click 'allow' on the top of the screen to allow using your webcam and microphone for calls</p>
 		<div id="step1-error">
-			<p>Failed to access the webcam and microphone. Make sure to run this demo on an http server and click allow when asked for permission by the browser.</p>
+			<p>Failed to access the webcam and microphone. </p>
 			<a href="#" id="step1-retry" class="button">Try again</a>
 		</div>
 	</div>
 
 <!--Make calls to others-->
 <div id="step2">
-	<p>Your id: <span id="my-id">...</span></p>
-	<p>Share this id with others so they can call you.</p>
-	<p><span id="subhead">Make a call</span><br>
-		<input type="text" placeholder="Call user id..." id="callto-id">
-		<a href="#" id="make-call">Call</a>
+	<p>Your  id: <span id="my-id">...</span></p>
+	<p>Share this id with others</p>
+	<p><span id="subhead">Invite to session</span><br>
+		<input type="text" placeholder="Add user id..." id="callto-id">
+		<a href="#" id="make-call">Invite</a>
 	</p>
 </div>
 
 <!--Call in progress-->
 <div id="step3">
-	<p>Currently in call with <span id="their-id">...</span></p>
-	<p><a href="#" id="end-call">End call</a></p>
+	<p>Currently in session with <span id="their-id">...</span></p>
+	<p><a href="#" id="end-call">End Session</a></p>
 </div>
 
 </div>
