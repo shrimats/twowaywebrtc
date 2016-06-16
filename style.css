@@ -1,11 +1,9 @@
 h2 {
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
   font-size: 28px;
   font-weight: bold;
 }
 
 body {
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
   font-size: 16px;
 }
 
@@ -17,7 +15,6 @@ input {
 
 #my-id {
   font-size: 22px;
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
   font-weight: bold;
 }
 
@@ -45,7 +42,6 @@ input {
 }
 #my-id {
   font-weight: bold;
-  color: #F00;
 
 }
 
@@ -53,15 +49,12 @@ input {
   height: 38px;"
 }
 
-#subhead { 
+#subhead {
   font-size: 24px;
-  color: #F00;
   font-weight: bold;
 }
 
 #make-call, #end-call {
   font-size: 18px;
-  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
   font-weight: bold;
-  color: #F00;
 }
