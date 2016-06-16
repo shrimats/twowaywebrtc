@@ -10,7 +10,7 @@ body {
 input {
   height: 38px;
   width: 180px;
-  border: medium solid #F00;
+  border: medium solid;
 }
 
 #my-id {
