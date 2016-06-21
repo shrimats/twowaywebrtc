@@ -68,7 +68,7 @@ function step1() {
        backgroundMusic.connect(mixedOutput);
 
     //   peerConnection.addStream(mixedOutput.stream);
-		$('#my-video').prop('src', URL.createObjectURL(mixedOutput.stream));
+		$('#my-video').prop('src', URL.createObjectURL(stream));
 
 		window.localStream = mixedOutput.stream;
 		step2();
