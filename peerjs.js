@@ -49,6 +49,16 @@ $(function() {
 
 function step1() {
 	navigator.getWebcam({audio: true, video: true}, function(stream){
+
+  var context;
+  try {
+    // Fix up for prefixing
+    window.AudioContext = window.AudioContext||window.webkitAudioContext;
+    context = new AudioContext();
+  }
+  catch(e) {
+    alert('Web Audio API is not supported in this browser');
+  }
     var microphone = context.createMediaStreamSource(stream);
        var backgroundMusic = context.createMediaElementSource(document.getElementById("back"));
        var analyser = context.createAnalyser();
