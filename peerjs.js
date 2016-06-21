@@ -4,13 +4,16 @@ navigator.getWebcam = ( navigator.getUserMedia ||
                          navigator.mozGetUserMedia ||
                          navigator.msGetUserMedia);
 
-var peer = new Peer({ key: '7gi7akjj5e7phkt9',
-						debug: 3,
-						config: {'iceServers': [
-						{ url: 'stun:stun.l.google.com:19302' },
-						{ url: 'stun:stun1.l.google.com:19302' },
-						{ url: 'turn:numb.viagenie.ca', username:"shrimats@gmail.com", credential:"revathi"}
-						]}});
+// var peer = new Peer({ key: '7gi7akjj5e7phkt9',
+// 						debug: 3,
+// 						config: {'iceServers': [
+// 						{ url: 'stun:stun.l.google.com:19302' },
+// 						{ url: 'stun:stun1.l.google.com:19302' },
+// 						{ url: 'turn:numb.viagenie.ca', username:"shrimats@gmail.com", credential:"revathi"}
+// 						]}});
+
+var peer = new Peer({　host:'webrtcpeerjs1.herokuapp.com/', secure:true, port:443, key: 'peerjs', debug: 3})
+
 
 // On open, set the peer id
 peer.on('open', function(){
@@ -52,7 +55,7 @@ function step1() {
 	}, function(){ $('#step1-error').show(); });
 }
 
-function step2() { 
+function step2() {
 	$('#step1', '#step3').hide();
 	$('#step2').show();
 }
