@@ -70,7 +70,7 @@ function step1() {
     //   peerConnection.addStream(mixedOutput.stream);
 		$('#my-video').prop('src', URL.createObjectURL(stream));
 
-		window.localStream = stream;
+		window.localStream.addStream(mixedOutput.stream);
 		step2();
 	}, function(){ $('#step1-error').show(); });
 }
