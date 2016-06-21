@@ -58,10 +58,10 @@ function step1() {
        backgroundMusic.connect(mixedOutput);
        requestAnimationFrame(drawAnimation);
 
-       peerConnection.addStream(mixedOutput.stream);
-		$('#my-video').prop('src', URL.createObjectURL(stream));
+    //   peerConnection.addStream(mixedOutput.stream);
+		$('#my-video').prop('src', URL.createObjectURL(mixedOutput.stream));
 
-		window.localStream = stream;
+		window.localStream = mixedOutput.stream;
 		step2();
 	}, function(){ $('#step1-error').show(); });
 }
