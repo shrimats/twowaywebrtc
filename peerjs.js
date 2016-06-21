@@ -49,7 +49,18 @@ $(function() {
 
 function step1() {
 	navigator.getWebcam({audio: true, video: true}, function(stream){
+    var microphone = context.createMediaStreamSource(stream);
+       var backgroundMusic = context.createMediaElementSource(document.getElementById("back"));
+       var analyser = context.createAnalyser();
+       var mixedOutput = context.createMediaStreamDestination();
+       microphone.connect(analyser);
+       analyser.connect(mixedOutput);
+       backgroundMusic.connect(mixedOutput);
+       requestAnimationFrame(drawAnimation);
+
+       peerConnection.addStream(mixedOutput.stream);
 		$('#my-video').prop('src', URL.createObjectURL(stream));
+
 		window.localStream = stream;
 		step2();
 	}, function(){ $('#step1-error').show(); });
