@@ -66,7 +66,6 @@ function step1() {
        microphone.connect(analyser);
        analyser.connect(mixedOutput);
        backgroundMusic.connect(mixedOutput);
-       requestAnimationFrame(drawAnimation);
 
     //   peerConnection.addStream(mixedOutput.stream);
 		$('#my-video').prop('src', URL.createObjectURL(mixedOutput.stream));
