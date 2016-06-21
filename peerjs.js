@@ -12,7 +12,7 @@ navigator.getWebcam = ( navigator.getUserMedia ||
 // 						{ url: 'turn:numb.viagenie.ca', username:"shrimats@gmail.com", credential:"revathi"}
 // 						]}});
 
-var peer = new Peer({　host:'webrtcpeerjs1.herokuapp.com/', secure:true, port:443, key: 'peerjs', debug: 3})
+var peer = new Peer({　host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3})
 
 
 // On open, set the peer id
